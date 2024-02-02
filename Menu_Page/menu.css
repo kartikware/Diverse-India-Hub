@@ -53,12 +53,9 @@ img{
     color: rgb(39, 48, 48);
     font-weight: bold;
 }
-.note1{
-    margin-top: 100px;
-}
 .l1,.l2,.l3,.l4{
     position: absolute;
-    top: 120%;
+    top: 200%;
     font-size: large;
 
 }
@@ -127,4 +124,23 @@ h2{
     right: 6.5%;
     top: 10%;
     color: #122;
+}
+.head1,.head2{
+    background-color: azure;
+}
+.head2{
+    width: 30%;
+    position: absolute;
+    top: 118%;
+    right: 0.75%;
+}
+.vande{
+    position: absolute;
+    top: 128%;
+    left: 34%;
+}
+.consti{
+    position: absolute;
+    top: 128%;
+    right: 5%;
 }
