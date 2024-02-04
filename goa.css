@@ -1,0 +1,110 @@
+h1{
+    font-size:40px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(243, 183, 110);
+    width: 600px;
+    border: 2px solid rgb(252, 6, 6);
+    border-radius: 12px;
+    box-shadow: 0 0 8px darkblue;
+}
+.bott{
+    background-color: aqua;
+    border: 2px solid black;
+    border-radius: 0 5px 0 5px;
+    width:250px;
+    position: absolute;
+    right: 240px;
+}
+img{
+    margin-top: 60px;
+    width: 400px;
+    border: 3px solid blue;
+    margin-bottom: 30px;
+}
+summary{margin-top: 10px;
+    font-size: 23px;
+    background-color: chartreuse;
+    border: 2px solid;
+    border-radius: 30px;
+    width: 280px;
+    padding-left: 10px;
+    box-shadow: 15px 0 10px rgb(63, 68, 118);
+}
+p{
+    background-color: rgb(254, 254, 254);
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 270px;
+}
+.l1{
+    position: absolute;
+    top: 100%;
+    left: 1%;
+}
+.l2{
+    position: absolute;
+    top: 100%;
+    left: 36%;
+}
+.l3{
+    position: absolute;
+    left: 71%;
+    top: 100%;
+}
+body{
+    background-color: darkgrey;
+}
+button{
+    font-size: 50px;
+    color: rgb(131, 6, 6);
+    background-color: rgb(149, 244, 101);
+    height: 30px;
+    width: 50px;
+    border-color: rgb(10, 100, 19);
+    border-radius:15px ;
+}
+button:active{
+    background-color: aquamarine;
+}
+.left{
+    position: absolute;
+    top: -9px;
+    left: 10px;
+}
+.home{
+    font-size: 25px;
+    position: absolute;
+    left: 70px;
+    top: 6px;
+}
+input{
+    position: absolute;
+    left: 130px;
+    top: 14px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+.test{
+    position: absolute;
+    right:68px;
+    top: 10px;
+    
+
+}
+.quiz{
+    font-size: 27px;
+    position: absolute;
+    right: 4px;
+    top: -6px;
+}
+.next{
+    position: absolute;
+    right:9px;
+    top: 10px;
+}
+.right{
+    font-size: 54px;
+    position: absolute;
+    top: -21px;
+    right: 1px;
+}
