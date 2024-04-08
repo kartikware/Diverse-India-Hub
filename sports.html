@@ -10,25 +10,36 @@
 <body>
     <style>
         body {
-            background-color: rgb(148, 160, 20);
+            background-color: rgb(112, 112, 243);
+            margin: 0;
+            padding: 0;
         }
-
+        .shop-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         .box {
+            width: calc(33.33% - 20px); /* Adjust as needed */
+            margin: 10px;
             height: 25rem;
-            background-color: rgb(225, 232, 155);
+            background-color: rgb(162, 162, 248);
+            display: flex;
+            flex-direction: column;
         }
-
-        .title {
-            background-color: rgb(221, 232, 94);
+        .box-content {
+            flex: 1;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
         }
-
         .box-image {
-            height: 15rem;
-            width: 15rem;
-            margin-right: auto;
-            margin-left: auto;
+            height: 100%;
+            background-size: cover;
         }
     </style>
+
     <div class="title">
         <div class="head flex justify-center">Popular Sports of India</div>
     </div>
