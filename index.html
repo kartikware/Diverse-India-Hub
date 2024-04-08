@@ -5,37 +5,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diverse India</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
     <script src="script.js" defer></script>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            max-width: 300px;
+        }
+        .search-bar input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+        .search-bar button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-bar button:hover {
+            background-color: #0056b3;
+        }
+        .account {
+            display: flex;
+            gap: 10px;
+        }
+        .account button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .account button:hover {
+            background-color: #0056b3;
+        }
+        .shop-section {
+            padding-top: 80px;
+        }
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .box-content {
+            padding: 20px;
+        }
+        .box-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .box h2 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .box h4 {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .box button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .box button:hover {
+            background-color: #0056b3;
+        }
+        .notice {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .notice p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        footer {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            margin-top: 20px;
+        }
+        .footer-links {
+            margin-top: 20px;
+        }
+        .footer-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #007bff;
+        }
+        .footer p {
+            margin: 10px 0;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        .backToTop {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .backToTop:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
-    <header class="m-1">
-        <div class="navbar rounded">
-            <div class="flag flex justify-center item-center rounded"><img src="indian-flag.jpg" alt="">
+    <header>
+        <div class="navbar">
+            <div class="logo">Diverse India</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </div>
-            <div class="nav-search border">
-                <select class="search-select">
-                    <option>All</option>
-                    <option>Jammu & Kashmir</option>
-                    <option>Goa</option>
-                    <option>Himachal Pradesh</option>
-                    <option>Gujrat</option>
-                    <option>Maharashtra</option>
-                    <option>Punjab</option>
-                    <option>Tamilnadu</option>
-                    <option>Karnataka</option>
-                    <option>Telangana</option>
-                </select>
-                <input placeholder="Search Item . . . . ." class="search-input">
-                <div class="search-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
             </div>
-            <div class="account flex justify-center item-center">
-                <button class="sign flex justify-center item-center" onclick="goToSignUp()">Sign up</button><div class="log-in flex justify-center item-center"><button class="log item-center flex justify-center">Log-in</button></div>
+            <div class="account">
+                <button>Sign Up</button>
+                <button>Log In</button>
             </div>
-        </div>
         </div>
     </header>
     <div class="shop-section m-1 p-1">
@@ -58,8 +222,10 @@
 </div>
 </div>
 </div>
-<div class="notice rounded flex justify-center p-1"><p>Here is The List of Parameters to Describe Indian Diversity.</p> 
-    <p>So Just Press "See More" and  Get Information.</p></div>
+ <div class="notice">
+        <p>Here is The List of Parameters to Describe Indian Diversity.</p> 
+        <p>So Just Press "See More" and Get Information.</p>
+    </div
 <div class="states flex m-1 p-1">
     <div class="box1 box">
         <div class="box-content">
@@ -146,19 +312,15 @@
 </div>
 </div>
 <footer>
-    <div class="foot-panel1">
         <button class="backToTop">Back to Top</button>
-    </div>
-    <div class="foot-panel3">
-        <div class="foot-top">
-            <a>Conditions of Use</a>
-            <a>Privacy Notice</a>
-            <a>Your Ads Privacy Choices</a>
+        <div class="footer-links">
+            <a href="#">Conditions of Use</a>
+            <a href="#">Privacy Notice</a>
+            <a href="#">Your Ads Privacy Choices</a>
         </div>
-        <div class="foot-bottom">
-            <p><i class="fa-regular fa-copyright"></i>2023-2024,Diverse-India.com,inc. or its affiliates</p>
-        </div>
-    </div>
-</footer>
+        <p>&copy; 2023-2024, Diverse-India.com, Inc. or its affiliates</p>
+    </footer>
+</body>
+</html>
 </body>
 </html>
