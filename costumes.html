@@ -7,47 +7,59 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
     <style>
-        body{
+        body {
             background-color: rgb(112, 112, 243);
+            margin: 0;
+            padding: 0;
         }
-        .box{
-            height: 25rem; /* Adjust this value as needed */
+        .shop-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box {
+            width: calc(33.33% - 20px); /* Adjust as needed */
+            margin: 10px;
+            height: 25rem;
             background-color: rgb(162, 162, 248);
-        }
-        .box-image{
-            height: 15rem;
-            width: 15rem;
-            margin-right: auto;
-            margin-left: auto;
+            display: flex;
+            flex-direction: column;
         }
         .box-content {
-            height: 10rem; /* Adjust this value as needed */
-            overflow: auto;
+            flex: 1;
+            overflow: hidden;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .box-image {
+            height: 100%;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
     <div class="shop-section m-1 p-1">
-        <div class="box1 box">
+        <div class="box">
             <div class="box-content">
                 <div class="box-image" style="background-image: url('jammu-costume.jpg');"></div>
                 <h2 class="m-1">State: Jammu & Kashmir</h2>
-                <h4 class="m-1">Jammu & Kashmir's traditional attire is characterized by the Phiran, a woolen gown worn by both men and women. Women's Phirans are often adorned with intricate embroidery, while men's attire is more simplistic. This traditional dress reflects the region's cultural heritage and provides warmth in the mountainous climate.</h4>      
+                <h4 class="m-1">Jammu & Kashmir's traditional attire is characterized by the Phiran, a woolen gown worn by both men and women. Women's Phirans are often adorned with intricate embroidery, while men's attire is more simplistic. This traditional dress reflects the region's cultural heritage and provides warmth in the mountainous climate.</h4>
             </div>
         </div>
         <!-- Repeat similar structure for other states -->
-        <div class="box2 box">
-            <div class="box-content"> 
-                <div class="box-image" style="background-image: url('goa-costume.png');"></div>   
+        <div class="box">
+            <div class="box-content">
+                <div class="box-image" style="background-image: url('goa-costume.png');"></div>
                 <h2 class="m-1">State: Goa</h2>
-                <h4 class="m-1">Goa's traditional attire is influenced by Portuguese and Indian cultures. Women often wear the Kunbi saree or the Pano Bhaju. Men typically wear the traditional attire called the Kashti.</h4>         
+                <h4 class="m-1">Goa's traditional attire is influenced by Portuguese and Indian cultures. Women often wear the Kunbi saree or the Pano Bhaju. Men typically wear the traditional attire called the Kashti.</h4>
             </div>
         </div>
-        <div class="box3 box">
-            <div class="box-content">           
-                <div class="box-image" style="background-image: url('himachal-pradesh-costume.jpg');"></div> 
+        <div class="box">
+            <div class="box-content">
+                <div class="box-image" style="background-image: url('himachal-pradesh-costume.jpg');"></div>
                 <h2 class="m-1">State: Himachal Pradesh</h2>
-                <h4 class="m-1">Himachal Pradesh's traditional attire includes the Kurta, Dhoti, and Churidar for men, while women wear the Salwar Kameez and Ghagra Choli. The attire often reflects the colorful and vibrant culture of the region.</h4>           
+                <h4 class="m-1">Himachal Pradesh's traditional attire includes the Kurta, Dhoti, and Churidar for men, while women wear the Salwar Kameez and Ghagra Choli. The attire often reflects the colorful and vibrant culture of the region.</h4>
             </div>
         </div>
         <!-- Add other states similarly -->
