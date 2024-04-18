@@ -28,20 +28,31 @@
             flex-direction: column;
         }
         .box-content {
-            flex: 1;
-            overflow: hidden;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-        }
-        .box-image {
-            height: 100%;
-            background-size: cover;
-        }
-       
-        .box-content audio {
-            width: 100%;
-            margin-top: 1rem;
+        /* Adjust height as needed */
+        height: 25rem; /* or any other value that suits your design */
+        overflow: hidden;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative; /* Added position relative */
+    }
+    .box-content audio {
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+        position: absolute; /* Added position absolute */
+        bottom: 10px; /* Adjust the distance from the bottom */
+        left: 10px; /* Adjust the distance from the left */
+    }
+    .box-image {
+        /* Adjust height to maintain aspect ratio */
+        height: 100%;
+        background-size: cover;
+    }
+    .box-image img {
+        /* Make the images cover the entire box */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
         }
     </style>
     <div class="shop-section m-1 p-1">
